@@ -40,11 +40,11 @@
     },
     {
       "题号": "M010-S009",
-      "查询语句": "country=\"NL\" && cloud_name*=\"Amazon*\""
+      "查询语句": "country=\"NL\" && cloud_name=\"Amazon\""
     },
     {
       "题号": "M011-S005",
-      "查询语句": "region=\"Hebei\" && cloud_name*=\"Huawei*\""
+      "查询语句": "region=\"Hebei\" && cloud_name=\"Huawei\""
     },
     {
       "题号": "M012-S009",
@@ -248,7 +248,7 @@
     },
     {
       "题号": "M062-S010",
-      "查询语句": "country=\"NZ\" && (port=\"80\" || port=\"443\") && is_cloud=true"
+      "查询语句": "country=\"NZ\" && (port=\"80\" || port=\"443\") && is_cloud=\"true\""
     },
     {
       "题号": "M063-S001",
@@ -288,7 +288,7 @@
     },
     {
       "题号": "M072-S008",
-      "查询语句": "host*=\"*.edu.ar\" && (port=\"80\" || port=\"443\") && server!=\"nginx\""
+      "查询语句": "domain=\"edu.ar\" && (port=\"80\" || port=\"443\") && server!=\"nginx\""
     },
     {
       "题号": "M073-S003",
@@ -304,7 +304,7 @@
     },
     {
       "题号": "M076-S004",
-      "查询语句": "title==\"\" && status_code=\"200\" && fid!=\"\" && icon_hash!=\"\" && host=\"admin\" && (domain*=\"*.cn\" || domain*=\"????.com\")"
+      "查询语句": "title==\"\" && status_code=\"200\" && fid!=\"\" && icon_hash!=\"\" && host=\"admin\" && (domain=\".cn\" || domain*=\"????.com\")"
     },
     {
       "题号": "M077-S009",
@@ -392,7 +392,7 @@
     },
     {
       "题号": "M098-S001",
-      "查询语句": "host*=\"*.gov.cn.*\""
+      "查询语句": "host=\".gov.cn.\""
     },
     {
       "题号": "M099-S001",
