@@ -328,7 +328,7 @@
     },
     {
       "题号": "M082-S001",
-      "查询语句": "(domain=\"kuaihuoyun.com\" || domain=\"wlhyos.cn\" || domain=\"wlhyos.com\" || domain=\"56ctms.com\" || domain=\"xiaokuaikeji.com\" || domain=\"zhihuiwuliu.org.cn\") || ((cert=\"kuaihuoyun.com\" || cert=\"wlhyos.cn\" || cert=\"wlhyos.com\" || cert=\"56ctms.com\" || cert=\"xiaokuaikeji.com\" || cert=\"zhihuiwuliu.org.cn\") && cert.is_match=true && cert.is_valid=true && cert.not_after=\"2024-01-01 00:00:00\")"
+      "查询语句": "(domain=\"kuaihuoyun.com\" || domain=\"wlhyos.cn\" || domain=\"wlhyos.com\" || domain=\"56ctms.com\" || domain=\"xiaokuaikeji.com\" || domain=\"zhihuiwuliu.org.cn\") || ((cert=\"kuaihuoyun.com\" || cert=\"wlhyos.cn\" || cert=\"wlhyos.com\" || cert=\"56ctms.com\" || cert=\"xiaokuaikeji.com\" || cert=\"zhihuiwuliu.org.cn\") && cert.is_match=true && cert.is_valid=true)"
     },
     {
       "题号": "M083-S008",
@@ -400,7 +400,7 @@
     },
     {
       "题号": "M100-S001",
-      "查询语句": "cert.issuer.cn=\"ZeroSSL ECC DV SSL CA 2\" && cert.sn=\"63BD83716214836EF80075356161EB06\""
+      "查询语句": "cert.issuer.cn=\"ZeroSSL ECC DV SSL CA 2\" && cert.sn=\"63:BD:83:71:62:14:83:6E:F8:00:75:35:61:61:EB:06\""
     }
   ]
 }
