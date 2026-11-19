@@ -40,11 +40,11 @@
     },
     {
       "题号": "M010-S009",
-      "查询语句": "country=\"NL\" && cloud_name=\"aws\""
+      "查询语句": "country=\"NL\" && cloud_name*=\"Amazon*\""
     },
     {
       "题号": "M011-S005",
-      "查询语句": "region=\"Hebei\" && cloud_name=\"huawei\""
+      "查询语句": "region=\"Hebei\" && cloud_name*=\"Huawei*\""
     },
     {
       "题号": "M012-S009",
@@ -96,7 +96,7 @@
     },
     {
       "题号": "M024-S005",
-      "查询语句": "version=\"10.0.0\""
+      "查询语句": "product.version=\"10.0.0\""
     },
     {
       "题号": "M025-S010",
@@ -172,7 +172,7 @@
     },
     {
       "题号": "M043-S004",
-      "查询语句": "tls.version=\"tls1.0\" && cert.is_valid=true"
+      "查询语句": "tls.version=\"TLS 1.0\" && cert.is_valid=true"
     },
     {
       "题号": "M044-S007",
@@ -184,11 +184,11 @@
     },
     {
       "题号": "M046-S013",
-      "查询语句": "country=\"CN\" && is_domain=false && protocol=\"http\""
+      "查询语句": "country=\"CN\" && is_domain=false && type=\"subdomain\""
     },
     {
       "题号": "M047-S011",
-      "查询语句": "该需求不能直接转换为FOFA搜索语句"
+      "查询语句": "cert.is_equal=false"
     },
     {
       "题号": "M048-S001",
@@ -196,7 +196,7 @@
     },
     {
       "题号": "M049-S010",
-      "查询语句": "country=\"TR\" && ja3s=\"f4febc55ea12b31ae17cfb7e614afda8\""
+      "查询语句": "country=\"TR\" && tls.ja3s=\"f4febc55ea12b31ae17cfb7e614afda8\""
     },
     {
       "题号": "M050-S004",
@@ -236,7 +236,7 @@
     },
     {
       "题号": "M059-S006",
-      "查询语句": "port=\"143\" && cert.serial_number=\"1\" && (cert=\"TAK\" || cert=\"ATAK\" || cert=\"WinTAK\" || cert=\"Squad\" || cert=\"CoT\")"
+      "查询语句": "port=\"143\" && cert.sn=\"1\" && (cert=\"TAK\" || cert=\"ATAK\" || cert=\"WinTAK\" || cert=\"Squad\" || cert=\"CoT\")"
     },
     {
       "题号": "M060-S010",
@@ -276,11 +276,11 @@
     },
     {
       "题号": "M069-S001",
-      "查询语句": "country=\"TW\" && asn=\"20940\" && port=\"443\" && tls.version=\"tls1.3\" && cert.issuer.org!=\"Let's Encrypt\" && cert.issuer.org!=\"ZeroSSL\""
+      "查询语句": "country=\"TW\" && asn=\"20940\" && port=\"443\" && tls.version=\"TLS 1.3\" && cert.issuer.org!=\"Let's Encrypt\" && cert.issuer.org!=\"ZeroSSL\""
     },
     {
       "题号": "M070-S003",
-      "查询语句": "country!=\"JP\" && app=\"HFS\" && status_code=\"200\" && title==\"HFS /\" && cloud_name!=\"aws\""
+      "查询语句": "country!=\"JP\" && app=\"HFS\" && status_code=\"200\" && title==\"HFS /\" && cloud_name!=\"Amazon\""
     },
     {
       "题号": "M071-S006",
@@ -288,7 +288,7 @@
     },
     {
       "题号": "M072-S008",
-      "查询语句": "host*=\".edu.ar\" && (port=\"80\" || port=\"443\") && server!=\"nginx\" && app!=\"WAF\""
+      "查询语句": "host*=\"*.edu.ar\" && (port=\"80\" || port=\"443\") && server!=\"nginx\""
     },
     {
       "题号": "M073-S003",
@@ -304,7 +304,7 @@
     },
     {
       "题号": "M076-S004",
-      "查询语句": "title==\"\" && status_code=\"200\" && fid!=\"\" && icon_hash!=\"\" && host=\"admin\" && (domain*=\".cn\" || domain*=\"????.com\")"
+      "查询语句": "title==\"\" && status_code=\"200\" && fid!=\"\" && icon_hash!=\"\" && host=\"admin\" && (domain*=\"*.cn\" || domain*=\"????.com\")"
     },
     {
       "题号": "M077-S009",
@@ -328,7 +328,7 @@
     },
     {
       "题号": "M082-S001",
-      "查询语句": "(domain=\"kuaihuoyun.com\" || domain=\"wlhyos.cn\" || domain=\"wlhyos.com\" || domain=\"56ctms.com\" || domain=\"xiaokuaikeji.com\" || domain=\"zhihuiwuliu.org.cn\") || ((cert=\"kuaihuoyun.com\" || cert=\"wlhyos.cn\" || cert=\"wlhyos.com\" || cert=\"56ctms.com\" || cert=\"xiaokuaikeji.com\" || cert=\"zhihuiwuliu.org.cn\") && cert.is_match=true && cert.is_valid=true && cert.after=\"2024-01-01 00:00:00\" && cert.before=\"2026-08-30 18:17:49\")"
+      "查询语句": "(domain=\"kuaihuoyun.com\" || domain=\"wlhyos.cn\" || domain=\"wlhyos.com\" || domain=\"56ctms.com\" || domain=\"xiaokuaikeji.com\" || domain=\"zhihuiwuliu.org.cn\") || ((cert=\"kuaihuoyun.com\" || cert=\"wlhyos.cn\" || cert=\"wlhyos.com\" || cert=\"56ctms.com\" || cert=\"xiaokuaikeji.com\" || cert=\"zhihuiwuliu.org.cn\") && cert.is_match=true && cert.is_valid=true && cert.not_after=\"2024-01-01 00:00:00\")"
     },
     {
       "题号": "M083-S008",
@@ -392,15 +392,15 @@
     },
     {
       "题号": "M098-S001",
-      "查询语句": "host*=\".gov.cn.\""
+      "查询语句": "host*=\"*.gov.cn.*\""
     },
     {
       "题号": "M099-S001",
-      "查询语句": "app=\"Apache\" && version=\"2.4.49\""
+      "查询语句": "server=\"Apache/2.4.49\""
     },
     {
       "题号": "M100-S001",
-      "查询语句": "cert.issuer.cn=\"ZeroSSL ECC DV SSL CA 2\" && cert.serial_number=\"63BD83716214836EF80075356161EB06\""
+      "查询语句": "cert.issuer.cn=\"ZeroSSL ECC DV SSL CA 2\" && cert.sn=\"63BD83716214836EF80075356161EB06\""
     }
   ]
 }
